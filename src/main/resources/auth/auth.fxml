@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="450.0"
+            prefWidth="800.0"
+            xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="auth.authController">
+   <children>
+      <AnchorPane id="image" prefHeight="450.0" prefWidth="428.0" stylesheets="@../com/example/grocery/auth.css" />
+      <AnchorPane layoutX="426.0" prefHeight="450.0" prefWidth="374.0" style="-fx-background-color: white;" />
+   </children>
+</AnchorPane>

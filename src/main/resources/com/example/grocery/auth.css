@@ -1,0 +1,4 @@
+#image {
+    -fx-background-image: url("com/example/grocery/bc1.png");
+    /*-fx-graphic-text-gap : 10;*/
+}
