@@ -8,4 +8,6 @@ module com.example.grocery {
 
     opens com.example.grocery to javafx.fxml;
     exports com.example.grocery;
+    exports pos;
+    opens pos to javafx.fxml;
 }

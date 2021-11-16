@@ -16,6 +16,6 @@
     <Label fx:id="welcomeText" />
     <Button onAction="#onHelloButtonClick" text="Hello!" />
 
-    <Label fx:id="postText" />
-    <Button onAction="#postButtonClick" text="Hello!" />
+<!--    <Label fx:id="postText" />-->
+<!--    <Button onAction="#postButtonClick" text="Hello!" />-->
 </VBox>
