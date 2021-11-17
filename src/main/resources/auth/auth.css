@@ -1,0 +1,12 @@
+#image {
+    -fx-background-image: url("bc1.png");
+    /*-fx-graphic-text-gap : 10;*/
+}
+
+.loginButton:hover{
+    -fx-background-color: rgba(0, 0, 0, 0.67);
+}
+
+.cursor_hand{
+    -fx-cursor: hand;
+}

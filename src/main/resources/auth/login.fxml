@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="auth.authController">
+   <children>
+      <AnchorPane id="image" prefHeight="450.0" prefWidth="350.0" stylesheets="@auth.css">
+         <children>
+            <Circle fx:id="c1" fill="#1f93ff00" layoutX="175.0" layoutY="225.0" radius="128.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="15.0" style="-fx-stroke-dash-array: 50;" />
+            <ImageView fitHeight="103.0" fitWidth="184.0" layoutX="83.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane fx:id="content_area" layoutX="350.0" prefHeight="450.0" prefWidth="450.0" style="-fx-background-color: white;">
+         <children>
+            <HBox layoutY="-1.0" prefHeight="52.0" prefWidth="450.0">
+               <children>
+                  <Button mnemonicParsing="false" style="-fx-background-radius: 50; -fx-background-color: #22c3e0;" stylesheets="@auth.css" text="Sing In" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="100.0" top="15.0" />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="loginButton" />
+                        <String fx:value="cursor_hand" />
+                     </styleClass>
+                  </Button>
+                  <Button layoutX="70.0" layoutY="20.0" mnemonicParsing="false" onMouseClicked="#signUp" style="-fx-background-radius: 50; -fx-background-color: white;" styleClass="cursor_hand" stylesheets="@auth.css" text="Sing Up" textAlignment="CENTER">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="70.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <TextField layoutX="118.0" layoutY="136.0" prefHeight="33.0" prefWidth="214.0" promptText="Username" style="-fx-background-radius: 50; -fx-border-radius: 50;" />
+            <TextField layoutX="118.0" layoutY="200.0" prefHeight="33.0" prefWidth="214.0" promptText="Password" style="-fx-background-radius: 50; -fx-border-radius: 50;" />
+            <Button layoutX="172.0" layoutY="299.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="106.0" style="-fx-background-radius: 50; -fx-background-color: #22c3e0; -fx-border-radius: 50;" styleClass="cursor_hand" stylesheets="@auth.css" text="Sign In" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Button>
+            <HBox layoutX="118.0" layoutY="257.0" prefHeight="17.0" prefWidth="214.0">
+               <children>
+                  <Text lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Forgot Password?" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets left="121.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <AnchorPane layoutY="69.0" prefHeight="200.0" prefWidth="200.0" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
